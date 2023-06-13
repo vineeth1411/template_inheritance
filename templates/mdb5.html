@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Parent Html</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+</head>
+<body>
+    <center>
+        <button type="button" class="btn btn-success">Success</button>
+    </center>
+    <center><h1><i>hii</i></h1></center>
+    {% block body_block %}
+    {% endblock %}
+    
+
+
+
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
